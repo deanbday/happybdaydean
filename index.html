@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Happy Birthday Dean!!!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+<!--   <link rel="stylesheet" href="sakura.css" /> -->
+</head>
+<body>
+  <div class="card" style="cursor: pointer;">
+    <div class="imgBox" >
+      <div class="bark" onclick="togglePlay();"></div>
+      <img src="cover.gif">
+    </div>
+    <div class="details" >
+      <p class="small">Dear Dean,
+      </p>
+      <p class="text-justify xsmall" style="overflow-y: scroll; overflow-x:hidden; height: 260px;" >Kael here! Even though we’ve gone to the same school together for the past 6 years, we never really interacted that much until more recently. Though it feels like you’re one of those friends that I will always stay in contact with. 
+
+Welcome firstly, to adult life and secondly, good luck on whatever you hope to achieve and set your heart on in the future, I’m grateful to have gotten to meet a cool and genuine friend in you. Thanks for having my back, I got yours too.
+
+Also a huge thank you for helping me maintain Wen’s relationship with me, don’t know what I’d have done without you, we’re both grateful to have you in our life. 
+
+Hiiiii Dean! Wen here. I'm really happy to have a common friend with kael.  I am both apologetic and grateful that you've been patient with us. We've involved you in a lot of drama. You've been a part of our ups and downs as a couple. Please know that we are so happy to be a part of your life. 
+
+I hope that we can still be good friends in the future and that you don't get tired of us. I'm praying that you are currently enjoying your birthday with your family. We love you lots. 
+
+
+</p>
+      <p class="xsmall text-right"><br>From the cringiest couple you know,<br>Kael and Wednesday ♥</p>
+    </div>
+  </div>
+	<audio src="18.mp3" autoplay loop id="myAudio"></audio>
+<!-- partial -->
+   <script src="message.js" text="text/javascript"></script>
+   <script src="confetti.js-master/confetti.js" text="text/javascript"></script>
+   <script>
+    var myAudio = document.getElementById("myAudio");
+    var isPlaying = false;
+
+    function togglePlay() {
+      isPlaying ? myAudio.pause() : myAudio.play();
+    };
+
+    myAudio.onplaying = function() {
+      isPlaying = true;
+    };
+    myAudio.onpause = function() {
+      isPlaying = false;
+    };
+
+    var play = function(event){ event.srcElement.classList.toggle("playing")
+    }
+   </script>
+</body>
+</html>
